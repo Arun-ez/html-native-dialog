@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <button command="show-modal" commandfor="dialog:1">Open dialog</button>
+    <button command="show-modal" commandfor="dialog:1">Open Sheet</button>
 
     <dialog id="dialog:1" data-appearance="sheet" data-size="xlarge" data-position="bottom">
         <nav style="display: flex; align-items: center; gap: 1rem;">
@@ -98,7 +98,26 @@
         </main>
 
         <footer>
-            Footer
+            <button command="show-modal" commandfor="dialog:2">Open Sheet 2</button>
+            <dialog id="dialog:2" data-appearance="sheet" data-size="large" data-position="left">
+                <nav style="display: flex; align-items: center; gap: 1rem;">
+                    <button
+                        style="border: none; width: 2rem; height: 2rem; border-radius: 50%; display: flex; justify-content: center; align-items: center;"
+                        commandfor="dialog:2" command="close" aria-label="Close">
+                        <span aria-hidden="true"
+                            style="font-size: 1.5rem; font-weight: 300; margin: 0; padding: 0;">×</span>
+                    </button>
+                    <p> Add Your Title </p>
+                </nav>
+
+                <main>
+                    <h1>Another Sheet</h1>
+                </main>
+
+                <footer>
+                    Footer
+                </footer>
+            </dialog>
         </footer>
     </dialog>
     <script src="index.js"></script>
