@@ -15,8 +15,6 @@
          overlay 0.4s allow-discrete;
      box-sizing: border-box;
      padding: 1.5rem;
-     max-width: 100dvw;
-     max-height: 100dvh;
      border-style: solid;
      border-color: rgb(228, 216, 216);
  }
@@ -38,26 +36,30 @@
      border-radius: 1rem;
      border-width: 1px;
 
-     width: 22dvw;
+     width: calc(100dvw - 1rem);
+     height: fit-content;
+
+     max-width: 22rem;
+     max-height: calc(100dvh - 1rem);
 
      &[data-size="small"] {
-         width: 22dvw;
+         max-width: 22rem;
      }
 
      &[data-size="medium"] {
-         width: 42dvw;
+         max-width: 42rem;
      }
 
      &[data-size="large"] {
-         width: 62dvw;
+         max-width: 62rem;
      }
 
      &[data-size="xlarge"] {
-         width: 82dvw;
+         max-width: 82rem;
      }
 
      &[data-size="full"] {
-         width: 98dvw;
+         max-width: calc(100dvw - 1rem);
      }
 
      &:open {
@@ -101,14 +103,15 @@
 
      --sheet-translate: translateX(100%);
 
-     width: 22dvw;
-     height: 100dvh;
      margin: 0 0 0 auto;
      border-width: 1px 0 1px 1px;
      border-radius: 1.5rem 0 0 1.5rem;
 
+     height: 100dvh;
+     max-width: 28rem;
+
      &[data-size="small"] {
-         width: 22dvw;
+         max-width: 28rem;
      }
 
      &[data-size="medium"] {
