@@ -1,5 +1,10 @@
-const dialog = document.querySelector('dialog');
+const dialog = document.querySelector("dialog");
 
-dialog.onclick = (event) => {
-    event.target?.requestClose();
-};
+dialog.addEventListener(
+    'click',
+    (event) => {
+        if (event.target === dialog) {
+            dialog.requestClose();
+        }
+    }
+);
