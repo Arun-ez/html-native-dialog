@@ -11,15 +11,16 @@
 <body>
     <button command="show-modal" commandfor="dialog:1">Open Sheet</button>
 
-    <dialog id="dialog:1" data-appearance="dialog" data-size="small">
-        <nav style="display: flex; align-items: center; gap: 1rem;">
+    <dialog id="dialog:1" data-appearance="dialog" data-size="medium">
+
+        <header style="display: flex; align-items: center; gap: 1rem;">
             <button
                 style="border: none; width: 2rem; height: 2rem; border-radius: 50%; display: flex; justify-content: center; align-items: center;"
                 commandfor="dialog:1" command="close" aria-label="Close">
                 <span aria-hidden="true" style="font-size: 1.5rem; font-weight: 300; margin: 0; padding: 0;">×</span>
             </button>
             <p> Add Your Title </p>
-        </nav>
+        </header>
 
         <main>
             <h1>Welcome to Your Dashboard</h1>
@@ -63,11 +64,6 @@
                 inside a scrollable dialog.
             </p>
 
-            <blockquote>
-                "Great design is not just what something looks like,
-                but how naturally it works."
-            </blockquote>
-
             <p>
                 Here's an example with <mark>highlighted content</mark>,
                 <small>smaller supporting text</small>, and
@@ -75,13 +71,6 @@
             </p>
 
             <h3>Example Code</h3>
-
-            <pre>
-                <code>
-                    const message = "Hello, world!";
-                    console.log(message);
-                </code>
-            </pre>
 
             <h2>Final Notes</h2>
 
@@ -100,7 +89,7 @@
         <footer>
             <button command="show-modal" commandfor="dialog:2">Open Sheet 2</button>
             <dialog id="dialog:2" data-appearance="sheet" data-size="medium">
-                <nav style="display: flex; align-items: center; gap: 1rem;">
+                <header style="display: flex; align-items: center; gap: 1rem;">
                     <button
                         style="border: none; width: 2rem; height: 2rem; border-radius: 50%; display: flex; justify-content: center; align-items: center;"
                         commandfor="dialog:2" command="close" aria-label="Close">
@@ -108,7 +97,7 @@
                             style="font-size: 1.5rem; font-weight: 300; margin: 0; padding: 0;">×</span>
                     </button>
                     <p> Add Your Title </p>
-                </nav>
+                </header>
 
                 <main>
                     <h1>Another Sheet</h1>

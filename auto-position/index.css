@@ -30,13 +30,12 @@
      padding: 0;
      scrollbar-width: none;
 
-     & nav {
+     & header {
          position: sticky;
          inset-inline: 0;
          top: 0;
          padding: 1rem;
          z-index: 10;
-
          background: linear-gradient(to bottom,
                  white 0%,
                  color-mix(in oklch, white 98%, transparent) 10%,
@@ -53,7 +52,6 @@
          padding: 1.5rem;
          display: flex;
          flex-direction: column;
-         padding: 1.5rem;
          min-height: 100%;
      }
 
