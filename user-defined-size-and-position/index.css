@@ -32,6 +32,7 @@
      overflow-y: auto;
      overflow-x: hidden;
      padding: 0;
+     outline: none;
 
      & nav {
          position: sticky;
@@ -77,6 +78,12 @@
                  color-mix(in oklch, white 5%, transparent) 96%,
                  transparent 100%);
      }
+
+     &:focus,
+     &:focus-visible {
+         outline: none;
+     }
+
 
      &:last-of-type::backdrop {
          backdrop-filter: blur(4px);

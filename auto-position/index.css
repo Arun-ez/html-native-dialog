@@ -29,6 +29,7 @@
      overflow-x: hidden;
      padding: 0;
      scrollbar-width: none;
+     outline: 0;
 
      & header {
          position: sticky;
@@ -71,6 +72,11 @@
                  color-mix(in oklch, white 12%, transparent) 93%,
                  color-mix(in oklch, white 5%, transparent) 96%,
                  transparent 100%);
+     }
+
+     &:focus,
+     &:focus-visible {
+         outline: none;
      }
 
      &:last-of-type::backdrop {
