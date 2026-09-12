@@ -80,7 +80,7 @@
 
      &[data-appearance='dialog'] {
 
-         --dialog-transform: translateY(600px) rotateX(-30deg) scale(0);
+         --dialog-transform: translateY(0px) rotateX(-30deg) scale(0);
 
          transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
              opacity 0.4s ease,
