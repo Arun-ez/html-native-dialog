@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Web Dialog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <button command="show-modal" commandfor="dialog:1">Open Sheet</button>
+
+    <dialog id="dialog:1" data-appearance="dialog" data-size="small">
+        <nav style="display: flex; align-items: center; gap: 1rem;">
+            <button
+                style="border: none; width: 2rem; height: 2rem; border-radius: 50%; display: flex; justify-content: center; align-items: center;"
+                commandfor="dialog:1" command="close" aria-label="Close">
+                <span aria-hidden="true" style="font-size: 1.5rem; font-weight: 300; margin: 0; padding: 0;">×</span>
+            </button>
+            <p> Add Your Title </p>
+        </nav>
+
+        <main>
+            <h1>Welcome to Your Dashboard</h1>
+
+            <p>
+                This is a sample paragraph containing some
+                <strong>bold text</strong>, <em>italic text</em>, and
+                <u>underlined text</u> to test your typography.
+            </p>
+
+            <h2>Getting Started</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <strong>Praesent commodo</strong> justo vel sapien facilisis,
+                while <em>aliquam erat volutpat</em> makes the content feel more natural.
+            </p>
+
+            <h3>What You Can Do</h3>
+
+            <p>
+                You can create, edit, and manage your content from this panel.
+                Use <b>bold text</b> for important information and
+                <i>italic text</i> for emphasis.
+            </p>
+
+            <h4>Key Features</h4>
+
+            <ul>
+                <li><strong>Simple</strong> and intuitive interface</li>
+                <li>Fast and <em>responsive</em> interactions</li>
+                <li>Flexible content management</li>
+                <li>Accessible and user-friendly design</li>
+            </ul>
+
+            <h2>Important Information</h2>
+
+            <p>
+                Sometimes you may need to review additional information before
+                continuing. This section demonstrates how longer content behaves
+                inside a scrollable dialog.
+            </p>
+
+            <blockquote>
+                "Great design is not just what something looks like,
+                but how naturally it works."
+            </blockquote>
+
+            <p>
+                Here's an example with <mark>highlighted content</mark>,
+                <small>smaller supporting text</small>, and
+                <del>removed information</del>.
+            </p>
+
+            <h3>Example Code</h3>
+
+            <pre>
+                <code>
+                    const message = "Hello, world!";
+                    console.log(message);
+                </code>
+            </pre>
+
+            <h2>Final Notes</h2>
+
+            <p>
+                This is the end of the sample content. Add more sections,
+                images, lists, or other elements here to test how your
+                <strong>dialog sheet</strong> handles long-form content.
+            </p>
+
+            <p>
+                Thank you for taking the time to explore this example.
+                <em>Have a great day!</em>
+            </p>
+        </main>
+
+        <footer>
+            <button command="show-modal" commandfor="dialog:2">Open Sheet 2</button>
+            <dialog id="dialog:2" data-appearance="sheet" data-size="large">
+                <nav style="display: flex; align-items: center; gap: 1rem;">
+                    <button
+                        style="border: none; width: 2rem; height: 2rem; border-radius: 50%; display: flex; justify-content: center; align-items: center;"
+                        commandfor="dialog:2" command="close" aria-label="Close">
+                        <span aria-hidden="true"
+                            style="font-size: 1.5rem; font-weight: 300; margin: 0; padding: 0;">×</span>
+                    </button>
+                    <p> Add Your Title </p>
+                </nav>
+
+                <main>
+                    <h1>Another Sheet</h1>
+                </main>
+
+                <footer>
+                    Footer
+                </footer>
+            </dialog>
+        </footer>
+    </dialog>
+    <script src="index.js"></script>
+</body>
+
+</html>
