@@ -92,7 +92,7 @@
              display 0.4s allow-discrete,
              overlay 0.4s allow-discrete;
 
-         border-radius: 1rem;
+         border-radius: 1.5rem;
          border-width: 1px;
 
          width: calc(100dvw - 1rem);
